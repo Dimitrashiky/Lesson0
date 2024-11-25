@@ -11,7 +11,7 @@ class RunnerTest(TestCase):
     def test_run(self):
         r2 = Runner("Петя")
         for _ in range(10):
-            r2.walk()
+            r2.run()
         self.assertEqual(r2.distance, 100, f"{r2.name} пробежал {r2.distance}, а должен был 100")
 
     def test_challenge(self):
@@ -20,4 +20,4 @@ class RunnerTest(TestCase):
         for _ in range(10):
             r1.run()
             r2.walk()
-        self.assertEqual(r1.distance, r2.distance, f"Дистанции {r1.name} и {r2.name} совпадают")
+        self.assertNotEqual(r1.distance, r2.distance, f"Дистанции {r1.name} и {r2.name} совпадают")
