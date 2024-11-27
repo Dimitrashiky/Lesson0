@@ -2,8 +2,8 @@ import logging
 import unittest
 from unittest import TestCase
 
-if __name__ == "__main__":
-    logging.basicConfig(level=logging.INFO, filemode="w", filename="runner_tests.log", encoding="utf-8",
+
+logging.basicConfig(level=logging.INFO, filemode="w", filename="runner_tests.log", encoding="utf-8",
                         format="%(asctime)s | %(levelname)s | %(message)s")
 class Runner:
     def __init__(self, name, speed=5):
