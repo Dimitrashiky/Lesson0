@@ -4,7 +4,7 @@ import asyncio
 from aiogram.filters import CommandStart
 
 
-api = "7867274709:AAHYgWkZ4GZaYmksMvwwCv4U0iCSoiPnWmw"
+api = ""
 bot = Bot(token=api)
 dp = Dispatcher(storage= MemoryStorage())
 
