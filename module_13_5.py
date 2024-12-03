@@ -8,7 +8,7 @@ from aiogram.types import ReplyKeyboardMarkup, KeyboardButton
 
 
 
-api = "7867274709:AAHYgWkZ4GZaYmksMvwwCv4U0iCSoiPnWmw"
+api = ""
 bot = Bot(token=api)
 dp = Dispatcher(storage= MemoryStorage())
 keyboard = ReplyKeyboardMarkup(keyboard= [[KeyboardButton(text= "Рассчитать"), KeyboardButton(text= "Информация")]], resize_keyboard= True)
