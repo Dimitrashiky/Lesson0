@@ -9,7 +9,7 @@ from aiogram.types import InlineKeyboardMarkup, InlineKeyboardButton
 from aiogram.types import FSInputFile
 
 
-api = "7867274709:AAHYgWkZ4GZaYmksMvwwCv4U0iCSoiPnWmw"
+api = ""
 bot = Bot(token=api)
 dp = Dispatcher(storage= MemoryStorage())
 keyboard = ReplyKeyboardMarkup(keyboard= [[KeyboardButton(text= "Рассчитать"), KeyboardButton(text= "Информация")],
