@@ -16,6 +16,6 @@ async def user(user_id: Annotated[int, Path(ge=1, le=100, description= "Enter Us
     return f"Вы вошли как пользователь №{user_id}"
 
 @app.get("/user/{username}/{age}")
-async def nicK_age(username: Annotated[str, Path(min_length= 5, max_length= 20, description="Enter Username", example="Urban User")], age: Annotated[int, Path(ge =18, le=120, description="Enter age", example= "24")]):
+async def nicK_age(username: Annotated[str, Path(min_length= 5, max_length= 20, description="Enter Username", example="UrbanUser")], age: Annotated[int, Path(ge =18, le=120, description="Enter age", example= "24")]):
     return f"Информация о пользователе. Имя:{username}, Возраст:{age}"
 
